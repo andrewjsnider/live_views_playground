@@ -18,6 +18,8 @@ defmodule LiveViewsPlaygroundWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live "/light", LightLive, as: :light
   end
 
   # Other scopes may use custom stacks.

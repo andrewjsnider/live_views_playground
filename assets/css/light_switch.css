@@ -1,0 +1,59 @@
+:root {
+  --yellow: rgb(250 204 21);
+}
+
+.lightbulb-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  font-size: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: none;
+  color: var(--yellow);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin: 1rem;
+}
+
+.lightbulb-button img {
+  height: 67%;
+}
+
+.lightbulb-button.on {
+  background-color: var(--yellow);
+}
+
+.lightbulb-button:hover {
+  /* Can be adjusted to the desired illuminated yellow color */
+  box-shadow: 0 0 10px rgba(255, 235, 59, 0.7);
+  /* Optional: Add a subtle glow effect */
+}
+
+.plus-line,
+.minus-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 25px;
+  background-color: gray;
+}
+
+.plus-line::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -200%;
+  width: 25px;
+  height: 5px;
+  background-color: gray;
+}
+
+.minus-line {
+  width: 25px;
+  height: 5px;
+}
