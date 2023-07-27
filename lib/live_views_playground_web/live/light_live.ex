@@ -1,8 +1,8 @@
 defmodule LiveViewsPlaygroundWeb.LightLive do
   use LiveViewsPlaygroundWeb, :live_view
 
-  def mount(_params, _session, socker) do
-    socket = assign(socker, :brightness, 10)
+  def mount(_params, _session, socket) do
+    socket = assign(socket, :brightness, 10)
     {:ok, socket}
   end
 
