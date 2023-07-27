@@ -1,0 +1,34 @@
+.problem {
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  grid-gap: 3rem;
+  font-size: 1rem;
+}
+
+.problem {
+  border-collapse: collapse;
+  grid-row: auto;
+  grid-column: auto;
+  width: max-content;
+}
+
+.answer-row td {
+  border-top: 1px solid black;
+}
+
+@media print {
+  .print\:hidden {
+    display: none;
+  }
+}
