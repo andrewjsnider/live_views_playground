@@ -4,12 +4,12 @@
 
 h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .problems-grid {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-template-rows: auto;
   justify-content: space-evenly;
   grid-gap: 3rem;
@@ -23,12 +23,32 @@ h1 {
   width: max-content;
 }
 
+.number {
+  display: flex;
+  justify-content: end;
+}
+
 .answer-row td {
   border-top: 1px solid black;
 }
 
 @media print {
+
+  header,
+  footer {
+    display: none;
+  }
+
   .print\:hidden {
     display: none;
   }
+
+  .problem {
+    font-size: 12px;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
 }

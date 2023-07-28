@@ -20,7 +20,7 @@ defmodule LiveViewsPlaygroundWeb.Router do
     get "/", PageController, :home
 
     live "/light", LightLive, :light
-    live "/math", MathLive, :math
+    live "/multiplication", MultiplicationLive, :multiplication
   end
 
   # Other scopes may use custom stacks.
