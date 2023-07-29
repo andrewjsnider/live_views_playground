@@ -21,6 +21,7 @@ defmodule LiveViewsPlaygroundWeb.Router do
 
     live "/light", LightLive, :light
     live "/multiplication", MultiplicationLive, :multiplication
+    live "/todo", TodoLive, :todo
   end
 
   # Other scopes may use custom stacks.
